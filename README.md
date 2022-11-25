@@ -4,6 +4,7 @@
 <h1 align="center">COUNTDOWN COPA </h1>
 
 ### 🖥 Demo
+Contador regressivo para o dia da estreia do Brasil na copa do mundo contra a Sérvia 24/11/2022
 
 [Aplicação](https://countdowncopabr.netlify.app/)
 
