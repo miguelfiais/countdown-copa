@@ -21,11 +21,25 @@ function App() {
     setHour(Math.floor(totalSeconds / 3600) % 24)
     setMin(Math.floor(totalSeconds / 60) % 60)
     setSec(Math.floor(totalSeconds) % 60)
+    if(day < 0 && hour < 0 && min < 0 && sec < 0){
+      setDay(0)
+      setMin(0)
+      setHour(0)
+      setSec(0)
+    }
   }
   function formatTime(time){
     return time < 10 ? `0${time}` : time;
   }
   setInterval(Countdown, 1000);
+
+  if(day < 0 && hour < 0 && min < 0 && sec < 0){
+    setDay(0)
+    setMin(0)
+    setHour(0)
+    setSec(0)
+    
+  }
 
   return (
     <Container>
